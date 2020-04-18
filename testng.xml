@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="config.TestListener" />
+	</listeners>
+
+  <test name="Test">
+    <classes>
+      <class name="test.FacebookLoginTest">
+      <methods>
+      <exclude name="setUpTest"/>
+      <exclude name="loginTest"/>
+      </methods>
+      </class>
+      <class name="test.FacebookPostMessage">
+      <methods>
+      <exclude name="add_post"/>
+      </methods>
+      </class>
+      <class name="test.WalletHubSignUpTest">
+      </class>
+      <class name="test.WalletHubSimulationTest">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
